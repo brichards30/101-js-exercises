@@ -7,7 +7,7 @@
 // Example problem setup: Create a variable named doingJSRightNow and assign it the boolean true.
 // The line below creates the variable named doingJSRightNow and assigns the boolean value true
 // To complete Exercise #0, uncomment the following line of JS
-var doingJSRightNow = true
+// var doingJSRightNow = true
 
 // The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
 assert(doingJSRightNow, true, "a variable holding a true boolean value should be equal to true"); 
