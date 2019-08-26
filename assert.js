@@ -5,7 +5,7 @@ const assert = function(actual, expected, message = "") {
     if(JSON.stringify(actual) !== JSON.stringify(expected)) {
         console.error('[assert] expected:    ' + expected)
         console.error('[assert] instead got: ' + actual)
-        throw Error("Assert failed. The expected and actual values are not the same. " + message);
+        throw Error("Assert failed in " + message);
         
     }
     

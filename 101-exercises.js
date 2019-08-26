@@ -10,7 +10,7 @@
 var doingJSRightNow = false
 
 // The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
-assert(doingJSRightNow, true, "a variable holding a true boolean value should be equal to true"); 
+assert(doingJSRightNow, true, "Exercise 0"); 
 addToDone("Exercise 0 is correct");
 
 
@@ -938,12 +938,12 @@ addToDone("Exercise 83 is correct.")
 
 
 // Exercise 84
-// Write a function definition named getDuplicatedValues that takes in an array and returns all of the values that have been repeated elsewhere in the array
+// Write a function definition named elementsTimesTwo that takes in an array of numbers and returns an array with each value multiplied by 2.
 
 
-assert(getDuplicatedValues([1, 1, 2, 3], [3, 4, 5, 5]), [1, 2, 3, 4, 5]);
-assert(getDuplicatedValues([1, 1], [2, 2, 3]), [1, 2, 3]);
-assert(getDuplicatedValues(["tomato", "mango", 2, "kiwi"], ["eggplant", "tomato", "broccoli"]), ["tomato", "mango", "kiwi", "eggplant", "broccoli"]);
+assert(elementsTimesTwo([1, 2, 3]), [2, 4, 6], "Exercise 84")
+assert(elementsTimesTwo([0, 0, 0]), [0, 0, 0], "Exercise 84")
+assert(elementsTimesTwo([5, 10, 15]), [10, 20, 30], "Exercise 84")
 addToDone("Exercise 84 is correct.")
 
 
