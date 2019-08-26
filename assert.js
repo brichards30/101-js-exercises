@@ -6,7 +6,5 @@ const assert = function(actual, expected, message = "") {
         console.error('[assert] expected:    ' + expected)
         console.error('[assert] instead got: ' + actual)
         throw Error("Assert failed in " + message);
-        
     }
-    
 };
