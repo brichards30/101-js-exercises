@@ -50,7 +50,7 @@ assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "En
 addToDone("Exercise 5 is correct");
 
 // Exercise 6
-// Given the following assignment of the vegetables array, add "tomato" to the end of the array. 
+// add the string "tomato" onto the end of the vegetables array. 
 // Recommend using the built-in JS operation to add to an array.
 
 
@@ -938,12 +938,12 @@ addToDone("Exercise 83 is correct.")
 
 
 // Exercise 84
-// Write a function definition named getUniqueValuesFromTwoArrays that takes two arrays and returns a single array with only the unique values
+// Write a function definition named getDuplicatedValues that takes in an array and returns all of the values that have been repeated elsewhere in the array
 
 
-assert(getUniqueValuesFromTwoArrays([5, 1, 2, 3], [3, 4, 5, 5]), [1, 2, 3, 4, 5]);
-assert(getUniqueValuesFromTwoArrays([1, 1], [2, 2, 3]), [1, 2, 3]);
-assert(getUniqueValuesFromTwoArrays(["tomato", "mango", 2, "kiwi"], ["eggplant", "tomato", "broccoli"]), ["tomato", "mango", "kiwi", "eggplant", "broccoli"]);
+assert(getDuplicatedValues([1, 1, 2, 3], [3, 4, 5, 5]), [1, 2, 3, 4, 5]);
+assert(getDuplicatedValues([1, 1], [2, 2, 3]), [1, 2, 3]);
+assert(getDuplicatedValues(["tomato", "mango", 2, "kiwi"], ["eggplant", "tomato", "broccoli"]), ["tomato", "mango", "kiwi", "eggplant", "broccoli"]);
 addToDone("Exercise 84 is correct.")
 
 
