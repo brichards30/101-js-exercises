@@ -224,7 +224,7 @@ addToDone("Exercise 15 is correct.")
 
 
 // Exercise 16
-// Write a function definition named identity that takes in any argument and returns that argument's value. Don't overthink this one!
+// Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
 
 assert(identity(fruits), fruits, "Ensure that the function is defined, named properly, and returns the correct value");
 assert(identity(vegetables), vegetables, "Ensure that the function is defined, named properly, and returns the correct value");
