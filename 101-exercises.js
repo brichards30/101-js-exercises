@@ -210,7 +210,7 @@ addToDone("Exercise 11 is correct.")
 // Think about the definition of a number that is positive. 
 // Is 5 positive? Is 0.25 positive? Is 0.00001 positive? Is -0.001 positive? 
 // Is zero itself positive? What about infinity? What about negative infinity?
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators for guidance with JS comparison operators.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators for guidance with JS comparison operators.
 
 
 
@@ -567,6 +567,7 @@ assert(circumference(5), 31.41592653589793, "Exercise 42");
 assert(circumference(7), 43.982297150257104, "Exercise 42");
 addToDone("Exercise 42 is correct.")
 
+
 // In earlier exercises, the solution was to use a logical AND.
 // In some of the future exercises, the solution will be to use a logical OR. 
 // The following two example functions are examples that provide a hint on how to as
@@ -582,6 +583,7 @@ function isOneOrTwoOrThree(x) {
 }
 
 // Exercise 43
+// Review this code carefully https://gist.github.com/ryanorsinger/5627b954d119dabb3d8c44d56b38c354 if you want more guidance on Exercises 43, 44, and 45.
 // Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
 
 assert(isVowel("a"), true, "Exercise 43");
