@@ -971,6 +971,14 @@ assert(mean([3, 3, 3]), 3, "Exercise 61");
 assert(mean([1, 5, 6]), 4, "Exercise 61");
 addToDone("Exercise 61 is correct.");
 
+function mean (sequence) {
+  var avg = 0;
+  for (var i = 0; i < sequence.length; i++) {
+    avg += sequence[i];
+  }
+  return avg / sequence.length;
+}
+
 // Exercise 62
 // Write a function definition named median that takes in sequence of numbers and returns the average value
 
@@ -979,6 +987,7 @@ assert(median([1, 2, 3]), 2.0, "Exercise 62");
 assert(median([1, 5, 6]), 5.0, "Exercise 62");
 assert(median([1, 2, 5, 6]), 3.5, "Exercise 62");
 addToDone("Exercise 62 is correct.");
+
 
 // Exercise 63
 // Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus theminimum.
