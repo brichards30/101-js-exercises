@@ -955,7 +955,13 @@ assert(sumAll([3, 3, 3]), 9, "Exercise 60");
 assert(sumAll([0, 5, 6]), 11, "Exercise 60");
 addToDone("Exercise 60 is correct.");
 
-function sumAll(sequence) {}
+function sumAll(sequence) {
+    var total = 0;
+    for(var i=0;i<sequence.length;i++) {
+      total += sequence[i];
+    }
+    return total;
+}
 
 //  Exercise 61
 //  Write a function definition named mean that takes in sequence of numbers and returns the average value
