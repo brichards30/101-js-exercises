@@ -843,6 +843,10 @@ assert(second([1, 2, 3]), 2, "Exercise 51");
 assert(second(["JS", "is", "awesome"]), "is", "Exercise 51");
 addToDone("Exercise 51 is correct.")
 
+function second(input) {
+  return input[1];
+}
+
 
 // Exercise 52
 // Write a function definition named third that takes in sequence and returns the third value of that sequence.
@@ -852,6 +856,9 @@ assert(third([1, 2, 3]), 3, "Exercise 52");
 assert(third(["JS", "is", "awesome"]), "awesome", "Exercise 52");
 addToDone("Exercise 52 is correct.")
 
+function third(input) {
+  return input[2];
+}
 
 // Exercise 53
 // Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
@@ -861,6 +868,9 @@ assert(forth([1, 2, 3, 4]), 4, "Exercise 53");
 assert(forth(["JS", "is", "awesome", "right?"]), "right?", "Exercise 53");
 addToDone("Exercise 53 is correct.")
 
+function fourth(input) {
+  return input[3];
+}
 
 // Exercise 54
 // Write a function definition named last that takes in sequence and returns the last value of that sequence.
