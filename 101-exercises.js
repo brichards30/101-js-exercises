@@ -1340,9 +1340,13 @@ addToDone("Exercise 80 is correct.");
 // Exercise 81
 // Write a function definition named shortestString that takes in an array of strings and returns the shortest string in the array.
 function shortestString(arr) {
-    arr.sort();
+    arr.sort(function(a, b){
+        return a.length - b.length;
+    });
     return arr[0]
 }
+
+
 
 assert(shortestString(["kiwi", "mango", "strawberry"]), "kiwi", "Exercise 81");
 assert(shortestString(["hello", "everybody"]), "hello", "Exercise 81");
@@ -1356,6 +1360,12 @@ addToDone("Exercise 81 is correct.");
 // Exercise 82
 // Write a function definition named longestString that takes in sequence of strings and returns the longest string in the array.
 
+function longestString(arr) {
+    arr.sort(function(a, b){
+        return b.length - a.length;
+    });
+    return arr[0]
+}
 assert(
     longestString(["kiwi", "mango", "strawberry"]),
     "strawberry",
@@ -1372,6 +1382,16 @@ addToDone("Exercise 82 is correct.");
 // Exercise 83
 // Write a function definition named getUniqueValues that takes in an array and returns an with only the unique values from that array.
 
+function getUniqueValues(strings) {
+    var unique = [];
+    for(var i=0;i<strings.length;i++) {
+        if(unique.includes(strings[i])) {
+            continue;
+        }
+        unique.push(strings[i]);
+    }
+    return unique;
+}
 assert(
     getUniqueValues(["ant", "ant", "mosquito", "mosquito", "ladybug"]),
     ["ant", "mosquito", "ladybug"],
