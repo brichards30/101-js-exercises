@@ -982,6 +982,13 @@ function mean (sequence) {
 // Exercise 62
 // Write a function definition named median that takes in sequence of numbers and returns the average value
 
+function median(arr) {
+    const mid = Math.floor(arr.length / 2),
+        nums = [...arr].sort((a, b) => a - b);
+    return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+
+}
+
 assert(median([1, 2, 3, 4, 5]), 3.0, "Exercise 62");
 assert(median([1, 2, 3]), 2.0, "Exercise 62");
 assert(median([1, 5, 6]), 5.0, "Exercise 62");
@@ -990,15 +997,28 @@ addToDone("Exercise 62 is correct.");
 
 
 // Exercise 63
-// Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus theminimum.
+// Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus the minimum.
 
+function maxMinusMin(arr) {
+  arr.sort();
+  return arr[arr.length - 1] - arr[0]
+}
 assert(maxMinusMin([1, 2, 2, 8, 3, 4]), 7, "Exercise 63");
 assert(maxMinusMin([1, 1, 2, 3, 9]), 8, "Exercise 63");
 assert(maxMinusMin([2, 2, 3, 3, 3, 7]), 5, "Exercise 63");
 addToDone("Exercise 63 is correct.");
 
+
 // Exercise 64
 // Write a function definition named productOfAll that takes in sequence of numbers and returns the product of multiplying all the numbers together
+
+function productOfAll(sequence) {
+  var total = 1;
+  for (var i = 0; i < sequence.length; i++) {
+    total *= sequence[i];
+  }
+  return total;
+}
 
 assert(productOfAll([1, 2, 3]), 6, "Exercise 64");
 assert(productOfAll([3, 4, 5]), 60, "Exercise 64");
@@ -1008,6 +1028,10 @@ addToDone("Exercise 64 is correct.");
 // Exercise 65
 // Write a function definition named getHighestNumber that takes in sequence of numbers and returns the largest number.
 
+function getHighestNumber(sequence) {
+  sequence.sort();
+  return sequence[sequence.length - 1]
+}
 assert(getHighestNumber([1, 2, 3]), 3, "Exercise 65");
 assert(getHighestNumber([1, 5, 2, 3, 4]), 5, "Exercise 65");
 assert(getHighestNumber([5, 1, 2, 4, 9]), 9, "Exercise 65");
@@ -1016,14 +1040,23 @@ addToDone("Exercise 65 is correct.");
 // Exercise 66
 // Write a function definition named getSmallestNumber that takes in sequence of numbers and returns the smallest number.
 
+function getSmallestNumber(sequence) {
+  sequence.sort();
+  return sequence[0]
+}
 assert(getSmallestNumber([1, 2, 3]), 1, "Exercise 66");
 assert(getSmallestNumber([3, 5, 9, 8, 1]), 1, "Exercise 66");
 assert(getSmallestNumber([8, 9, 4, 5, 7]), 4, "Exercise 66");
 addToDone("Exercise 66 is correct.");
 
+
 // Exercise 67
 // Write a function definition named onlyOddNumbers that takes in sequence of numbers and returns the odd numbers in an array.
 
+function onlyOddNumbers(arr) {
+  var odds = [];
+
+}
 assert(onlyOddNumbers([1, 2, 3]), [1, 3], "Exercise 67");
 assert(
   onlyOddNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]),
