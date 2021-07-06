@@ -1422,6 +1422,12 @@ addToDone("Exercise 83 is correct.");
 // Exercise 84
 // Write a function definition named elementsTimesTwo that takes in an array of numbers and returns an array with each value multiplied by 2.
 
+function elementsTimesTwo(arr) {
+    for(var i=0;i<arr.length;i++) {
+        arr[i] *=2;
+    }
+    return arr;
+}
 assert(elementsTimesTwo([1, 2, 3]), [2, 4, 6], "Exercise 84");
 assert(elementsTimesTwo([0, 0, 0]), [0, 0, 0], "Exercise 84");
 assert(elementsTimesTwo([5, 10, 15]), [10, 20, 30], "Exercise 84");
@@ -1429,6 +1435,10 @@ addToDone("Exercise 84 is correct.");
 
 // Exercise 85
 // Write a function named flatten that takes in an array of arrays. Return the flattened array.
+
+function flatten(arr) {
+    return [].concat.apply([],arr);
+}
 
 assert(flatten([[1, 2], [3, 4], [5, 6]]), [1, 2, 3, 4, 5, 6], "Exercise 85");
 assert(
